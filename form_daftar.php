@@ -76,11 +76,18 @@
     		<input type="radio" name="test6" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
-            <label>Menyatakan bahwa saya memberikan pernyataan dengan sejujur-jujurnya. Apabila dikemudian hari pernyataan saya tdak benar/jujur, saya bersedia untuk bertanggung jawab atas apa yang saya nyatakan. Pastikan data yang anda masukkan sudah benar sebelum menyelesaikan form penilaian online ini.</label><br>      
+            <label>Apakah anda sedang / pernah mengalami sakit kepala/nyeri otot/gatal-gatal/infeksi mata/hilang penciuman/sakit perut dalam 14 hari terakhir?</label><br>      
             <tr class="form-control">
             <input type="radio" name="test7" value="1" > Iya<br>
     		<input type="radio" name="test7" value="0"> Tidak<br>
             </tr></div>
+      <div class="form-group">
+            <label>Menyatakan bahwa saya memberikan pernyataan dengan sejujur-jujurnya. Apabila dikemudian hari pernyataan saya tdak benar/jujur, saya bersedia untuk bertanggung jawab atas apa yang saya nyatakan. Pastikan data yang anda masukkan sudah benar sebelum menyelesaikan form penilaian online ini.</label><br>      
+            <tr class="form-control">
+            <input type="radio" name="test8" value="1" > Iya<br>
+    		<input type="radio" name="test8" value="0"> Tidak<br>
+            </tr></div>
+      
     
       <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 
