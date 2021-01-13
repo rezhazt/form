@@ -14,6 +14,8 @@ $query = mysqli_query($kon,"SELECT * FROM tabel_visit ORDER BY id DESC LIMIT 1")
 </head>
 
 <body>
+
+
 <div id="border_tiket">
 
     <H>
@@ -32,9 +34,14 @@ $query = mysqli_query($kon,"SELECT * FROM tabel_visit ORDER BY id DESC LIMIT 1")
             			
             <br><br>
             
+            <?php $jumlah = $data["test1"]+$data["test2"]+$data["test3"]+$data["test4"]+$data["test5"]+$data["test6"]+$data["test7"]; ?>
             
             <td><?php echo $data["fullname"];?><br></td>
             <td><?php echo $data["visitDate"];?><br></td>
+            <?php if($jumlah<5){
+				echo "Resiko Covid 19 : Rendah";} 
+				else {
+					echo "Resiko Covid 19 : Tinggi";} ?>
             
             
              </tr>
@@ -42,9 +49,12 @@ $query = mysqli_query($kon,"SELECT * FROM tabel_visit ORDER BY id DESC LIMIT 1")
         <?php } ?>
 
 </tbody>
-<br>   
-    <p>Resiko Covid19 : &riskRasio </p>
-    <tr>Harap Tunjukan di gerbang Pos Security utama sebelum memasuki area perusahaan</tr>   
+<br>
+     
+	
+    
+    <p>
+    <tr>Harap Tunjukan di gerbang Pos Security utama sebelum memasuki area perusahaan</tr> </p>  
 </div>
 </br>
 <div>
