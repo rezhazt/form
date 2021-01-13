@@ -41,59 +41,47 @@
       <div class="form-group">
             <label>Apakah anda sedang / pernah mengalami demam/batuk/pilek/sakit tenggorokan/sesak nafas dalam 14 hari terakhir?</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test1" value="1" > Iya<br>
+    		<input type="radio" name="test1" value="0"> Tidak<br>
             </tr></div>
       
       <div class="form-group">
             <label>Dalam 14 hari terakhir, apakah anda pernah menggunakan transportasi umum? (Bus, Pesawat, Kereta, Kapal dan Moda Transportasi lainnya)</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test2" value="1" > Iya<br>
+    		<input type="radio" name="test2" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
             <label>Dalam 14 hari terakhir, apakah anda pernah memiliki riwayat kontak langsung dengan kasus konfirmasi, probable atau suspek COVID-19?</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test3" value="1" > Iya<br>
+    		<input type="radio" name="test3" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
             <label>Dalam 14 hari terakhir, apakah anda pernah mengikuti kegiatan yang dihadiri oleh orang banyak?</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test4" value="1" > Iya<br>
+    		<input type="radio" name="test4" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
             <label>Dalam 14 hari terakhir, apakah anda pernah melakukan perjalanan keluar kota/negara lain?	</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test5" value="1" > Iya<br>
+    		<input type="radio" name="test5" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
             <label>Dalam 14 hari terakhir, apakah anda pernah keluar rumah / tempat umum ? (pasar, fasilitas kesehatan, kerumunan dan kegiatan lainnya)</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test6" value="1" > Iya<br>
+    		<input type="radio" name="test6" value="0"> Tidak<br>
             </tr></div>
       <div class="form-group">
             <label>Menyatakan bahwa saya memberikan pernyataan dengan sejujur-jujurnya. Apabila dikemudian hari pernyataan saya tdak benar/jujur, saya bersedia untuk bertanggung jawab atas apa yang saya nyatakan. Pastikan data yang anda masukkan sudah benar sebelum menyelesaikan form penilaian online ini.</label><br>      
             <tr class="form-control">
-            <input type="radio" name="test" value="1" > Iya<br>
-    		<input type="radio" value="0"> Tidak<br>
+            <input type="radio" name="test7" value="1" > Iya<br>
+    		<input type="radio" name="test7" value="0"> Tidak<br>
             </tr></div>
-            
-            <?php
-			$jumlah = count($_POST['test']);
-			$covid = 0;
-			
-			if ($jumlah < "5") {
- 				echo $covid = "Rendah";
-			}else{
-				echo $covid = "Tinggi";}
-            ?>
-      
-      
-
+    
       <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 
     </form>
