@@ -34,7 +34,7 @@ $query = mysqli_query($kon,"SELECT * FROM tabel_visit ORDER BY id DESC LIMIT 1")
             			
             <br><br>
             
-            <?php $jumlah = $data["test1"]+$data["test2"]+$data["test3"]+$data["test4"]+$data["test5"]+$data["test6"]+$data["test7"]; ?>
+            <?php $jumlah = $data["test1"]+$data["test2"]+$data["test3"]+$data["test4"]+$data["test5"]+$data["test6"]+$data["test7"]+$data["test8"]; ?>
             
             <td><?php echo $data["fullname"];?><br></td>
             <td><?php echo $data["visitDate"];?><br></td>
